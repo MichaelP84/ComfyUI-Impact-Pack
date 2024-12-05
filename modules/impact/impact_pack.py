@@ -2209,8 +2209,8 @@ class ImpactWildcardEncode:
                         "populated_text": ("STRING", {"multiline": True, "dynamicPrompts": False, "tooltip": "The actual value passed during the execution of 'ImpactWildcardEncode' is what is shown here. The behavior varies slightly depending on the mode. Wildcard syntax can also be used in 'populated_text'."}),
                         "mode": ("BOOLEAN", {"default": True, "label_on": "Populate", "label_off": "Fixed", "tooltip": "Populate: Before running the workflow, it overwrites the existing value of 'populated_text' with the prompt processed from 'wildcard_text'. In this mode, 'populated_text' cannot be edited.\n"
                                                                                                                        "Fixed: Ignores wildcard_text and keeps 'populated_text' as is. You can edit 'populated_text' in this mode."}),
-                        "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"), ),
-                        "Select to add Wildcard": (["Select the Wildcard to add to the text"], ),
+                        "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"), ),
+                        "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"], ),
                         "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "tooltip": "Determines the random seed to be used for wildcard processing."}),
                     },
                 }

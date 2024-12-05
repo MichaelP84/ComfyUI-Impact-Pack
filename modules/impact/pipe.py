@@ -14,8 +14,8 @@ class ToDetailerPipe:
                      "negative": ("CONDITIONING",),
                      "bbox_detector": ("BBOX_DETECTOR", ),
                      "wildcard": ("STRING", {"multiline": True, "dynamicPrompts": False}),
-                     "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
-                     "Select to add Wildcard": (["Select the Wildcard to add to the text"], ),
+                     "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
+                     "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"], ),
                      },
                 "optional": {
                     "sam_model_opt": ("SAM_MODEL",),
@@ -52,8 +52,8 @@ class ToDetailerPipeSDXL(ToDetailerPipe):
                      "refiner_negative": ("CONDITIONING",),
                      "bbox_detector": ("BBOX_DETECTOR", ),
                      "wildcard": ("STRING", {"multiline": True, "dynamicPrompts": False}),
-                     "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
-                     "Select to add Wildcard": (["Select the Wildcard to add to the text"],),
+                     "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
+                     "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"],),
                      },
                 "optional": {
                     "sam_model_opt": ("SAM_MODEL",),
@@ -188,8 +188,8 @@ class BasicPipeToDetailerPipe:
         return {"required": {"basic_pipe": ("BASIC_PIPE",),
                              "bbox_detector": ("BBOX_DETECTOR", ),
                              "wildcard": ("STRING", {"multiline": True, "dynamicPrompts": False}),
-                             "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
-                             "Select to add Wildcard": (["Select the Wildcard to add to the text"],),
+                             "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
+                             "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"],),
                              },
                 "optional": {
                     "sam_model_opt": ("SAM_MODEL", ),
@@ -224,8 +224,8 @@ class BasicPipeToDetailerPipeSDXL:
                              "refiner_basic_pipe": ("BASIC_PIPE",),
                              "bbox_detector": ("BBOX_DETECTOR", ),
                              "wildcard": ("STRING", {"multiline": True, "dynamicPrompts": False}),
-                             "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
-                             "Select to add Wildcard": (["Select the Wildcard to add to the text"],),
+                             "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
+                             "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"],),
                              },
                 "optional": {
                     "sam_model_opt": ("SAM_MODEL", ),
@@ -323,8 +323,8 @@ class EditDetailerPipe:
             "required": {
                 "detailer_pipe": ("DETAILER_PIPE",),
                 "wildcard": ("STRING", {"multiline": True, "dynamicPrompts": False}),
-                "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
-                "Select to add Wildcard": (["Select the Wildcard to add to the text"],),
+                "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
+                "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"],),
             },
             "optional": {
                 "model": ("MODEL",),
@@ -420,8 +420,8 @@ class EditDetailerPipeSDXL(EditDetailerPipe):
             "required": {
                 "detailer_pipe": ("DETAILER_PIPE",),
                 "wildcard": ("STRING", {"multiline": True, "dynamicPrompts": False}),
-                "Select to add LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
-                "Select to add Wildcard": (["Select the Wildcard to add to the text"],),
+                "Select_to_add_LoRA": (["Select the LoRA to add to the text"] + folder_paths.get_filename_list("loras"),),
+                "Select_to_add_Wildcard": (["Select the Wildcard to add to the text"],),
             },
             "optional": {
                 "model": ("MODEL",),
